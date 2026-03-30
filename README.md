@@ -38,44 +38,6 @@ All runs are saved in **TREC run format**. The code is structured as a single Ju
 Below is a complete blueprint for your GitHub repository **`ir-ranking-evaluation-wikir-mirage`**. It includes a structured README, suggested file organisation, and instructions to reproduce all experiments from your notebook.
 
 
-
-## 📁 Suggested Repository Structure
-
-```
-ir-ranking-evaluation-wikir-mirage/
-│
-├── README.md
-├── requirements.txt
-├── config.py                 (optional: paths, parameters)
-│
-├── notebooks/
-│   └── HA2.ipynb             (your complete Jupyter Notebook)
-│
-├── scripts/
-│   ├── download_novels.py    (script to fetch Tolstoy/Dostoevsky from Gutenberg)
-│   └── run_all.py            (optional: run notebook cells programmatically)
-│
-├── data/                     (ignored by git – for local data)
-│   ├── wikIR1k (1).zip
-│   ├── doc_pool.json
-│   ├── dataset.json
-│   ├── oracle.json
-│   └── novels/               (war_and_peace.txt, crime_and_punishment.txt)
-│
-├── runs/                     (generated TREC run files)
-│   └── run_wiki_*_BM25.txt, etc.
-│
-├── results/                  (generated tables, plots)
-│   └── wiki_results.csv
-│   └── mirage_results.csv
-│   └── learning_curve.png
-│
-└── LICENSE
-
-
-```
-
-
 ### Download the datasets
 
 - **WikiR (en1k)**: [https://github.com/getalp/wikiR](https://github.com/getalp/wikiR)  
